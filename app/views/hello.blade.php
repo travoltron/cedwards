@@ -26,7 +26,7 @@
       <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-default btn-lg pull-left toggle"><i class="fa fa-times"></i></a>
         <li class="sidebar-brand"><a href="#top">Christen Edwards</a></li>
-        <li><a href="#mywork">My Work</a></li>
+        <li><a href="#mywork">Images</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -79,7 +79,7 @@
             </a>
           </div>
         </div>
-        <h2 class="lead text-center"><a href="#resume">My Resume</a></h2>
+        <h2 class="lead text-center"><a href="#resume">Resume</a></h2>
       </div>
     </div>
     <!-- /My Work -->
@@ -94,7 +94,7 @@
     <div id="resume" class="resume">
       <div class="container">
         <div class="row">
-          <h2 class="text-center">My Work Experience</h2>
+          <h2 class="text-center">Work Experience</h2>
           <div class="col-md-12">
             
             <table class="table">
