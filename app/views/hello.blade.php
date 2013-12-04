@@ -14,6 +14,8 @@
     <!-- Add custom CSS here -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="author" href="humans.txt" />
   </head>
 
   <body>
