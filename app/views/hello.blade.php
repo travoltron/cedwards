@@ -61,10 +61,10 @@
               @foreach(Portimg::all() as $img)
                 <div class="item active portimg text-center">
                   {{ HTML::image($img->image, $alt=NULL, $attribute = array('class'=>'center-img img-responsive') ) }}
-                  <div class="carousel-caption">
+                  <!-- <div class="carousel-caption">
                     <h3>Heading</h3>
                     <p>Desc</p>
-                  </div>
+                  </div> -->
                 </div>
               @endforeach
             </div>
