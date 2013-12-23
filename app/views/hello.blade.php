@@ -165,7 +165,7 @@
         });
     </script>
     <script>
-        $(".toggle-sb").click(function(e) {
+        $(".toggle, .toggle-sb").click(function(e) {
             e.preventDefault();
             $("#sidebar-wrapper").toggleClass("active");
         });
