@@ -25,7 +25,7 @@
     <div id="sidebar-wrapper">
       <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-default btn-lg pull-left toggle"><i class="fa fa-times"></i></a>
-        <li class="sidebar-brand toggle-sb"><a href="#top">Christen Edwards</a></li>
+        <li class="sidebar-brand toggle toggle-sb"><a href="#top">Christen Edwards</a></li>
         <li><a class="toggle-sb" href="#mywork">Images</a></li>
         <li><a class="toggle-sb" href="#resume">Resume</a></li>
         <li><a class="toggle-sb" href="#contact">Contact</a></li>
