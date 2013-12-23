@@ -16,6 +16,7 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::resource('portimgs', 'PortimgsController');
-
-Route::resource('jobs', 'JobsController');
+App::missing(function($exception)
+{
+    return Response::view('errors.missing', array(), 404);
+});

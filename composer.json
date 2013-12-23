@@ -6,7 +6,8 @@
 	"require": {
 		"laravel/framework": "4.0.*",
 		"anahkiasen/former": "dev-master",
-		"way/generators": "dev-master"
+		"way/generators": "dev-master",
+		"frozennode/administrator": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

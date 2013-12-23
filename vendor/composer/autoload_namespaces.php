@@ -7,9 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Whoops' => array($vendorDir . '/filp/whoops/src'),
-    'Way\\Tests' => array($vendorDir . '/way/laravel-test-helpers/src'),
     'Way\\Generators' => array($vendorDir . '/way/generators/src'),
-    'Underscore' => array($vendorDir . '/anahkiasen/underscore-php/src'),
     'Symfony\\Component\\Translation\\' => array($vendorDir . '/symfony/translation'),
     'Symfony\\Component\\Routing\\' => array($vendorDir . '/symfony/routing'),
     'Symfony\\Component\\Process\\' => array($vendorDir . '/symfony/process'),
@@ -34,6 +32,7 @@ return array(
     'Jeremeamia\\SuperClosure' => array($vendorDir . '/jeremeamia/SuperClosure/src'),
     'Illuminate' => array($vendorDir . '/laravel/framework/src'),
     'HtmlObject' => array($vendorDir . '/anahkiasen/html-object/src'),
+    'Frozennode\\Administrator' => array($vendorDir . '/frozennode/administrator/src'),
     'Former' => array($vendorDir . '/anahkiasen/former/src'),
     'Doctrine\\DBAL\\' => array($vendorDir . '/doctrine/dbal/lib'),
     'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/lib'),
