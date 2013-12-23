@@ -44,11 +44,6 @@
     <div id="mywork" class="intro">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <h2>Previous Projects</h2>
-          </div>
-        </div>
-        <div class="row">
           <div id="port-carousel" class="carousel slide col-md-8 col-md-offset-2 text-center" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -68,13 +63,6 @@
                 </div>
               @endforeach
             </div>
-            <!-- Controls -->
-            <a class="left carousel-control" href="#port-carousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#port-carousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
           </div>
         </div>
         <h2 class="lead text-center"><a href="#resume">My Resume</a></h2>
@@ -92,18 +80,27 @@
     <div id="resume" class="resume">
       <div class="container">
         <div class="row">
-          <h2 class="text-center">My Work Experience</h2>
+          <h2 class="text-center">Resume</h2>
           <div class="col-md-12">
             
             <table class="table">
-              @foreach(Job::orderBy('date_start', 'desc')->get() as $job)
+              <thead>
                 <tr>
-                  <td class="lead">{{ $job->showname }}</td>
-                  <td class="lead">{{ $job->position }}</td>
-                  <td class="lead">{{ $job->supervisor }}</td>
-                  <td class="lead">{{ $job->date_start }} @if($job->date_start != $job->date_end) - {{ $job->date_end }} @endif</td>
-                </tr>
+                  <th>Show</th>
+                  <th>Position</th>
+                  <th>Supervisor</th>
+                  <th>Year</th>
+              </thead>
+              <tbody>
+              @foreach(Job::orderBy('date_start', 'desc')->get() as $job)
+                  <tr>
+                    <td class="lead">{{ $job->showname }}</td>
+                    <td class="lead">{{ $job->position }}</td>
+                    <td class="lead">{{ $job->supervisor }}</td>
+                    <td class="lead">{{ $job->date_start }} @if($job->date_start != $job->date_end) - {{ $job->date_end }} @endif</td>
+                  </tr>
               @endforeach
+                </tbody>
             </table>
           </div>
         </div>
@@ -121,7 +118,7 @@
     <div id="contact" class="contact">
       <div class="container">
         <div class="row">
-          <h1 class="text-center">Contact Me</h1>
+          <h1 class="text-center">Contact</h1>
           <div class="col-md-6 col-md-offset-3 text-center">
             <address>
               <abbr title="Phone">P:</abbr> (607) 972-7099
