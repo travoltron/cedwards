@@ -26,9 +26,9 @@
       <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-default btn-lg pull-left toggle"><i class="fa fa-times"></i></a>
         <li class="sidebar-brand"><a href="#top">Christen Edwards</a></li>
-        <li><a href="#mywork">Images</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="toggle" href="#mywork">Images</a></li>
+        <li><a class="toggle" href="#resume">Resume</a></li>
+        <li><a class="toggle" href="#contact">Contact</a></li>
       </ul>
     </div>
     <!-- /Side Menu -->
@@ -82,11 +82,7 @@
     <div id="resume" class="resume">
       <div class="container">
         <div class="row">
-<<<<<<< HEAD
           <h2 class="text-center">Resume</h2>
-=======
-          <h2 class="text-center">Work Experience</h2>
->>>>>>> 1691d3a3764e2465a0ec61e198de46db46492864
           <div class="col-md-12">
             
             <table class="table">
@@ -169,7 +165,7 @@
         });
     </script>
     <script>
-        $("#menu-toggle").click(function(e) {
+        $(".toggle").click(function(e) {
             e.preventDefault();
             $("#sidebar-wrapper").toggleClass("active");
         });
