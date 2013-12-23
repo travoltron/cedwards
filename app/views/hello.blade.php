@@ -37,7 +37,7 @@
     <div id="top" class="header">
       <div class="vert-text">
         <h1>Christen Edwards</h1>
-        <h3><em>Hair Stylist & Creative Artist</em></h3>
+        <h3><em>Hair Stylist & Fabricator</em></h3>
       </div>
     </div>
     <!-- /Full Page Image Header Area -->
