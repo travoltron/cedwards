@@ -107,15 +107,8 @@ body {
 /* Full Page Image Header Area */
 
 .header {
-  display: table;
-  height: 100%;
-  width: 100%;
   position: relative;
   background: url(../img/tile_bg.jpg) repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 /* Intro */
