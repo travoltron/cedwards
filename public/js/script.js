@@ -1,8 +1,10 @@
 $(document).ready(function() {
-	$('.portimg:not(:eq(0))').removeClass('active');
-	$('.item img').css({
-		width: 'auto',
-		height: '450px',
-		maxheight: '450px'
+	$('.modal-img').click(function() {
+		$('#img-target').attr('src', $(this).data('main'));
+		$('#img-modal').modal({
+			backdrop:true,
+			keyboard:true,
+			show:true,
+		});
 	});
 });

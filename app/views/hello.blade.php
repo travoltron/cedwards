@@ -46,25 +46,16 @@
     <div id="mywork" class="intro">
       <div class="container">
         <div class="row">
-          <div id="port-carousel" class="carousel slide col-md-8 col-md-offset-2 text-center" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              @for($i=0; $i < Portimg::all()->count(); $i++)
-                <li data-target="#port-carousel" data-slide-to="{{$i}}"></li>
-              @endfor
-            </ol>
-
-            <div class="carousel-inner">
-              @foreach(Portimg::all() as $img)
-                <div class="item active portimg text-center">
-                  {{ HTML::image($img->image, $alt=NULL, $attribute = array('class'=>'center-img img-responsive') ) }}
-                  <!-- <div class="carousel-caption">
-                    <h3>Heading</h3>
-                    <p>Desc</p>
-                  </div> -->
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">          
+            @foreach(Portimg::all() as $img)
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="display: inline-block;position:relative;overflow:hidden;">
+                <div style="padding-top:100%;">
+                  <div style="position: absolute;top: 0;bottom: 0;left: -30%;right: -30%;">
+                    {{ HTML::image($img->image, $alt=NULL, $attribute = array('class' => 'modal-img', 'data-main' => $img->image, 'style' => 'cursor:pointer;') ) }}
+                  </div>
                 </div>
-              @endforeach
-            </div>
+              </div>
+            @endforeach
           </div>
         </div>
         <h2 class="lead text-center"><a href="#resume">Resume</a></h2>
@@ -145,12 +136,25 @@
               <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
             </div>
             <hr>
-            <p>Copyright &copy; Ben Warburton 2013</p>
+            <p>&copy;<a href="https://github.com/travoltron">travoltron</a> {{ date('Y') }}</p>
           </div>
         </div>
       </div>
     </footer>
     <!-- /Footer -->
+    <!-- Modal for images -->
+    <div class="modal fade" id="img-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p class="text-center"><img id="img-target" src="" style="max-width:100%"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
